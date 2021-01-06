@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classifytext"
+        android:layout_above="@+id/my_bottom_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/click_below_to_classify"
+        android:textStyle="bold"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/my_bottom_view">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gallery"
+            android:layout_margin="10dp"
+            android:text="@string/gallery"
+            android:background="#FFBB86FC"
+            android:textColor="#000">
+        </Button>
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+        </Space>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capture"
+            android:layout_margin="10dp"
+            android:text="@string/capture"
+            android:background="#FFBB86FC"
+            android:textColor="#000">
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:src="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image">
+    </ImageView>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:id="@+id/my_text"
+        android:layout_below="@+id/image">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/output_text"
+            android:text="@string/model_output_text"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/output"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

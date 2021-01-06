@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyTFCrop</string>
+    <string name="click_below_to_classify">Click below to classify</string>
+    <string name="gallery">Gallery</string>
+    <string name="capture">Capture</string>
+    <string name="model_output_text">Model Output : </string>
+</resources>
